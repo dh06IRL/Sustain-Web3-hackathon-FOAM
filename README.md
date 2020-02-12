@@ -36,3 +36,4 @@ FOAM POI data (https://foam.space/).
 - Add settings option to enable background notifications when near ANY FOAM POI (not just challenged)
 - Add distance settings for background POI notifications 
 - Query and add displays for FOAM Signals onto map and within AR View
+- Add extra context layer for those visiting a POI (reviews, pictures, etc)
