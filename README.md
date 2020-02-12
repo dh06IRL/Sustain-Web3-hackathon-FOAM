@@ -24,7 +24,7 @@ FOAM POI data (https://foam.space/).
 - If no POIs are found nearby, a pop up is displayed to the user encouraging them to create some
 
 ## Functinality (Verify Points Of Interest In Person)
-- Locatiion is periodically checked in the background, and on signifcant changes, a query for neabry FOAM POIs is made
+- Location is periodically checked in the background, and on signifcant changes, a query for neabry FOAM POIs is made
 - If a user is found near a challenge POI while app is in the background, they are sent a local notification to easily open into the app and see POI details
 
 
