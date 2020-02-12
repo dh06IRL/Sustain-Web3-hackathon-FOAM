@@ -1,5 +1,7 @@
 *Will be adding screenshots / demo video shortly*
 
+[![Demo Video](https://img.youtube.com/vi/Rgc2mX6d-ek/0.jpg)](https://www.youtube.com/watch?v=Rgc2mX6d-ek)
+
 # Sustain-Web3-hackathon-FOAM
 Submission for FOAM challenge(s) for the Gitcoin Sustain Web3 hackathon
 
@@ -29,6 +31,8 @@ FOAM POI data (https://foam.space/).
 
 
 ### Future Ideas
+- Improve AR world item size based on distance from user
+- Adjust how many items (query distance) are loaded / displayed based on general density 
 - Caching layer for offline support
 - iOS equivalent app
 - Provide deeper web3 integrations
