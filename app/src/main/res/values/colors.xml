@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#B477CD</color>
+    <color name="colorPrimaryDark">#5D3A63</color>
+    <color name="colorAccent">#1B69A5</color>
+
+    <color name="colorPrimaryTrans">#66B477CD</color>
+    <color name="colorAccentTrans">#661B69A5</color>
+
+    <color name="black_">#ff000000</color>
+    <color name="black_overlay">#8000</color>
+    <color name="black_overlay_dark">#BF000000</color>
+
+    <color name="white_">#ffffffff</color>
+    <color name="white_accent">#EDEDED</color>
+    <color name="white_bg">#F2F2F2</color>
+    <color name="white_overlay">#26FFFFFF</color>
+    <color name="menu_white_overlay">#66FFFFFF</color>
+    <color name="nav_white_overlay">#1AFFFFFF</color>
+
+    <color name="transparent">#00000000</color>
+
+    <color name="status_color">@color/colorPrimaryDark</color>
+    <color name="ab_color">@color/colorPrimary</color>
+    <color name="bg_color">#040306</color>
+    <color name="card_color">@color/white_</color>
+    <color name="nav_color">@color/black_</color>
+    <color name="text_color">@color/black_</color>
+    <color name="tab_color">@color/white_</color>
+    <color name="tab_text_color">@color/colorAccent</color>
+
+    <color name="card_accent_color">#040306</color>
+    <color name="card_accent_color_trans">#00040306</color>
+    <color name="dash_bg">#040306</color>
+    <color name="opt_round_card_view_dark_background">@color/card_accent_color</color>
+
+    <color name="foam_status_pending">#11a9f0</color>
+    <color name="foam_status_challenged">#f01158</color>
+    <color name="foam_status_verified">#11f04c</color>
+</resources>

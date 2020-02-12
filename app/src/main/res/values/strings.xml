@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">0xMap</string>
+    <string name="access_token">pk.eyJ1Ijoia3RtZGF2aWQyMjkiLCJhIjoiY2s2amlqcWZtMDRvczNubHU3Z2VtajZhZCJ9.sd8okNUBajuDGrQtlXB50w</string>
+    <string name="font">fonts/times-new-roman.ttf</string>
+
+    <string name="nav_vision_map">Vision Map</string>
+    <string name="nav_foam_tool">FOAM Tools</string>
+    <string name="nav_foam_map">FOAM Map</string>
+    <string name="nav_foam_tokens">Get FOAM Tokens</string>
+    <string name="nav_trust_wallet">Open Trust Wallet</string>
+    <string name="nav_meta_wallet">Open MetaMask Wallet</string>
+    <string name="nav_status_wallet">Open Status Wallet</string>
+    <string name="nav_get_wallet">Get an Ethereum Wallet</string>
+    <string name="nav_on_eth">Built on Ethereum</string>
+</resources>
