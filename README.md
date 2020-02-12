@@ -1,8 +1,11 @@
+*Will be adding screenshots / demo video shortly*
+
 # Sustain-Web3-hackathon-FOAM
 Submission for FOAM challenge(s) for the Gitcoin Sustain Web3 hackathon
 
 ## Gitcoin Context URls
 https://gitcoin.co/issue/ryan-foamspace/Sustain-Web3-hackathon/3/3960
+
 https://gitcoin.co/issue/ryan-foamspace/Sustain-Web3-hackathon/2/3961
 
 ## 0xMap : High Level
@@ -33,5 +36,3 @@ FOAM POI data (https://foam.space/).
 - Add settings option to enable background notifications when near ANY FOAM POI (not just challenged)
 - Add distance settings for background POI notifications 
 - Query and add displays for FOAM Signals onto map and within AR View
-
-*Will be adding screenshots / demo video shortly*
