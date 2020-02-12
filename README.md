@@ -29,6 +29,8 @@ FOAM POI data (https://foam.space/).
 
 
 ### Future Ideas
+- Improve AR world item size based on distance from user
+- Adjust how many items (query distance) are loaded / displayed based on general density 
 - Caching layer for offline support
 - iOS equivalent app
 - Provide deeper web3 integrations
