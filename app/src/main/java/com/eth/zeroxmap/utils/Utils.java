@@ -9,6 +9,7 @@ import android.util.Log;
 import android.util.TypedValue;
 import android.widget.Toast;
 
+import com.eth.zeroxmap.api.Analytics;
 import com.google.ar.core.ArCoreApk;
 import com.google.ar.core.Config;
 import com.google.ar.core.Session;
@@ -47,6 +48,8 @@ public class Utils {
     }
 
     public static void urlIntentWeb3(Context mContext, String url) {
+        Analytics.sendAnalyticEvent(mContext, "Url", url,
+            "", System.currentTimeMillis());
         if (Utils.isAppInstalled(mContext, Constants.TRUST_WALLET_PACKAGE)){
             String fullUrl = Constants.TRUST_URL_BASE + url;
             Intent intent = new Intent( Intent.ACTION_VIEW, Uri.parse( fullUrl ) );
@@ -70,6 +73,8 @@ public class Utils {
     }
 
     public static void launchAppPackage(Context mContext, String packageUrl){
+        Analytics.sendAnalyticEvent(mContext, "App", packageUrl,
+                "", System.currentTimeMillis());
         Intent intent = mContext.getPackageManager().getLaunchIntentForPackage(packageUrl);
         if (intent != null) {
             // We found the activity now start the activity
