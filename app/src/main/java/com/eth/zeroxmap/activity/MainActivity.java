@@ -34,6 +34,8 @@ import java.util.List;
 import info.isuru.sheriff.enums.SheriffPermission;
 import info.isuru.sheriff.helper.Sheriff;
 import info.isuru.sheriff.interfaces.PermissionListener;
+import io.radar.sdk.Radar;
+import io.radar.sdk.RadarTrackingOptions;
 
 
 public class MainActivity extends BaseActivity implements PermissionListener {
@@ -124,7 +126,12 @@ public class MainActivity extends BaseActivity implements PermissionListener {
     @Override
     public void onResume(){
         super.onResume();
-
+        RadarTrackingOptions trackingOptions = new RadarTrackingOptions.Builder()
+                .priority(Radar.RadarTrackingPriority.EFFICIENCY)
+                .offline(Radar.RadarTrackingOffline.REPLAY_STOPPED)
+                .sync(Radar.RadarTrackingSync.POSSIBLE_STATE_CHANGES)
+                .build();
+        Radar.startTracking(trackingOptions);
     }
 
     @Override
