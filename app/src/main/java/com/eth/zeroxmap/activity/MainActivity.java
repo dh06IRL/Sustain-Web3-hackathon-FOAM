@@ -1,4 +1,4 @@
-package com.eth.zeroxmap;
+package com.eth.zeroxmap.activity;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.widget.Toolbar;
@@ -13,6 +13,7 @@ import android.widget.FrameLayout;
 import android.widget.Toast;
 
 import com.airbnb.lottie.LottieAnimationView;
+import com.eth.zeroxmap.R;
 import com.eth.zeroxmap.activity.BaseActivity;
 import com.eth.zeroxmap.api.Analytics;
 import com.eth.zeroxmap.fragment.ArMapFragment;
@@ -67,7 +68,7 @@ public class MainActivity extends BaseActivity implements PermissionListener {
         mContext = this;
 
         setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle("");
+        getSupportActionBar().setTitle("0xMap");
 
         fragmentManager = getSupportFragmentManager();
         fragmentTransaction = fragmentManager.beginTransaction();
@@ -151,14 +152,12 @@ public class MainActivity extends BaseActivity implements PermissionListener {
 
     @Override
     public void onPermissionsGranted(int requestCode, ArrayList<String> acceptedPermissionList) {
-        Toast.makeText(this, "Got permission!", Toast.LENGTH_LONG).show();
         Analytics.setUserProperty(mContext, "Perm_Granted", "true");
         setupDrawer();
     }
 
     @Override
     public void onPermissionsDenied(int requestCode, ArrayList<String> deniedPermissionList) {
-        Toast.makeText(this, "No permission!", Toast.LENGTH_LONG).show();
         Analytics.setUserProperty(mContext, "Perm_Granted", "false");
     }
 
@@ -204,6 +203,9 @@ public class MainActivity extends BaseActivity implements PermissionListener {
             hasWallet = true;
         }
 
+        Analytics.sendAnalyticEvent(mContext, "Has_Wallet", Boolean.toString(hasWallet),
+                "", System.currentTimeMillis());
+
         if(!hasWallet){
             drawerItems.add(new PrimaryDrawerItem().withName(getResources().getString(R.string.nav_get_wallet))
                     .withIcon(R.mipmap.ic_wallet)
@@ -220,6 +222,8 @@ public class MainActivity extends BaseActivity implements PermissionListener {
                 .withOnDrawerItemClickListener(new Drawer.OnDrawerItemClickListener() {
                     @Override
                     public boolean onItemClick(View view, int position, IDrawerItem drawerItem) {
+                        Analytics.sendAnalyticEvent(mContext, "Nav_Click", "" + position,
+                                "", System.currentTimeMillis());
                         //Base AR / Map Open
                         if (drawerItem.getIdentifier() == 1) {
 //                            Analytics.sendAnalyticEvent());
