@@ -25,7 +25,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 
 import com.bumptech.glide.Glide;
-import com.eth.zeroxmap.MainActivity;
+import com.eth.zeroxmap.activity.MainActivity;
 import com.eth.zeroxmap.R;
 import com.eth.zeroxmap.api.Foam;
 import com.eth.zeroxmap.api.LocationApi;
@@ -430,20 +430,7 @@ public class ArMapFragment extends BaseFragment {
         base.setName(foamPoi.listingHash);
         base.setRenderable(viewRenderable);
         base.setEnabled(true);
-        // Add  listeners etc here
         String val = "" + foamPoi.name;
-        /*if (parseObject1.getString("type") != null) {
-            val = val + parseObject1.getString("type");
-            if (TextUtils.equals(parseObject1.getString("type"), ConstantReports.REPORT_TOKEN_DROP)) {
-                val = val.replace(" (Points)", "");
-            }
-            if (TextUtils.equals(parseObject1.getString("type"), ConstantReports.REPORT_CONSTRUCTION)) {
-                val = val.toLowerCase();
-            }
-        } else if (parseObject1.getString("mpoiName") != null) {
-            val = val + parseObject1.getString("mpoiName");
-        }*/
-
         View eView = viewRenderable.getView();
         ImageView reportImg = eView.findViewById(R.id.report_icon);
         Glide.with(reportImg)
