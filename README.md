@@ -1,10 +1,8 @@
-![App Icon](https://github.com/dhodge229/Sustain-Web3-hackathon-FOAM/blob/master/previews/app_icon.png?raw=true)
-
-
-[![Demo Video](https://img.youtube.com/vi/Rgc2mX6d-ek/0.jpg)](https://www.youtube.com/watch?v=Rgc2mX6d-ek)
-
 # Sustain-Web3-hackathon-FOAM
 Submission for FOAM challenge(s) for the Gitcoin Sustain Web3 hackathon
+
+![App Icon](https://github.com/dhodge229/Sustain-Web3-hackathon-FOAM/blob/master/previews/app_icon.png?raw=true)
+[![Demo Video](https://img.youtube.com/vi/Rgc2mX6d-ek/0.jpg)](https://www.youtube.com/watch?v=Rgc2mX6d-ek)
 
 ## Gitcoin Context URls
 https://gitcoin.co/issue/ryan-foamspace/Sustain-Web3-hackathon/3/3960
