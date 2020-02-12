@@ -1,4 +1,5 @@
-*Will be adding screenshots / demo video shortly*
+![App Icon](https://github.com/dhodge229/Sustain-Web3-hackathon-FOAM/blob/master/previews/app_icon.png?raw=true)
+
 
 [![Demo Video](https://img.youtube.com/vi/Rgc2mX6d-ek/0.jpg)](https://www.youtube.com/watch?v=Rgc2mX6d-ek)
 
@@ -41,3 +42,6 @@ FOAM POI data (https://foam.space/).
 - Add distance settings for background POI notifications 
 - Query and add displays for FOAM Signals onto map and within AR View
 - Add extra context layer for those visiting a POI (reviews, pictures, etc)
+
+
+![Home Screen](https://github.com/dhodge229/Sustain-Web3-hackathon-FOAM/blob/master/previews/app_nav.jpg?raw=true)
