@@ -24,4 +24,20 @@ public class Constants {
     public static final String METAMASK_URL_BASE = "https://metamask.app.link/dapp/";
 
     public static final String ETHERSCAN_ADDY_BASE = "https://etherscan.io/address/";
+
+
+    //Prefs
+    public static final String PREF_LAST_LOC_LAT = "last_loc_lat";
+    public static final String PREF_LAST_LOC_LON = "last_loc_lon";
+    public static final String PREF_LAST_LOC_ISMOCK = "last_loc_ismock";
+    public static final String PREF_LAST_LOC_ALT = "last_loc_alt";
+    public static final String PREF_LAST_LOC_ACCU = "last_loc_accu";
+    public static final String PREF_LAST_LOC_PROV = "last_loc_prov";
+    public static final String PREF_LAST_LOC_SPEED = "last_loc_speed";
+    public static final String PREF_LAST_LOC_BEAR = "last_loc_bear";
+    public static final String PREF_LAST_LOC_TIME = "last_loc_time";
+    public static final String PREF_LAST_LOC_ELA = "last_loc_ela";
+    public static final String PREF_LAST_LOC_VER_ACCU = "last_loc_vert_accu";
+    public static final String PREF_LAST_LOC_BEAR_ACCU = "last_loc_bear_accu";
+    public static final String PREF_LAST_LOC_SPEED_ACCU = "last_loc_speed_accu";
 }
