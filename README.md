@@ -1,5 +1,7 @@
 *Will be adding screenshots / demo video shortly*
 
+[![Demo Video](https://img.youtube.com/vi/Rgc2mX6d-ek/0.jpg)](https://www.youtube.com/watch?v=Rgc2mX6d-ek)
+
 # Sustain-Web3-hackathon-FOAM
 Submission for FOAM challenge(s) for the Gitcoin Sustain Web3 hackathon
 
