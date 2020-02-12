@@ -80,13 +80,16 @@ public class Foam {
                 .setCallback(callback);
     }
 
-    public static void fetchLocalPoi(Context mContext, Location lastLocation, FutureCallback<Response<String>> callback) {
+    public static void fetchLocalPoi(Context mContext, Location lastLocation, boolean challengeOnly, FutureCallback<Response<String>> callback) {
         double lonLeft = lastLocation.getLongitude() - Math.toDegrees(radius / R1 / Math.cos(Math.toRadians(lastLocation.getLatitude())));
         double lonRight = lastLocation.getLongitude() + Math.toDegrees(radius / R1 / Math.cos(Math.toRadians(lastLocation.getLatitude())));
         double latTop = lastLocation.getLatitude() + Math.toDegrees(radius / R1);
         double latBottom = lastLocation.getLatitude() - Math.toDegrees(radius / R1);
 
         String url = BASE_URL + String.format(ENDPOINT_POI, lonLeft, latBottom, lonRight, latTop);
+        if(challengeOnly){
+            url = url + "&status=challenged";
+        }
         Log.d(Constants.TAG, url);
         Ion.with(mContext)
                 .load(url)

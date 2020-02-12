@@ -627,7 +627,7 @@ public class ArMapFragment extends BaseFragment {
 
     private void fetchFoamPois() {
         ((MainActivity) getActivity()).showLoading();
-        Foam.fetchLocalPoi(mContext, lastLoc, new FutureCallback<Response<String>>() {
+        Foam.fetchLocalPoi(mContext, lastLoc, false, new FutureCallback<Response<String>>() {
             @Override
             public void onCompleted(Exception e, Response<String> result) {
                 try {
