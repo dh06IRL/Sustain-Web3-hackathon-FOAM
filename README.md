@@ -16,6 +16,8 @@ Named 0xMap, this repo holds the code for a native Android app that leverages
 Augmented Reality (ArCore) and 3D mapping (Mapbox) to create a visual reference tool for 
 FOAM POI data (https://foam.space/). 
 
+Debug APK build : https://drive.google.com/open?id=1lcKpvQED1lsdzTQyL5CiSYUxW2fe_2Ft
+
 ## Functinality (Mobile-Friendly Map Viewer)
 - At first launch, app will request location and camera permissions (THESE ARE REQUIRED!)
 - Once accepted, app will load into a base level navigation layer defaulting to opening the AR / map view
