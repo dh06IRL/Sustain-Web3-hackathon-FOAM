@@ -42,7 +42,8 @@ public class Foam {
     private static final String ENDPOINT_SIGNAL = "/signal/map?swLng=%1$s&swLat=%2$s&neLng=%3$s&neLat=%4$s";
 
     public static double R1 = 6371;
-    public static double radius = 40;
+    //TODO adjust as needed (or ideally make user setting)
+    public static double radius = 5;
 
     public static void fetchLocalBeacons(Context mContext, Location lastLocation, FutureCallback<Response<String>> callback) {
         double lonLeft = lastLocation.getLongitude() - Math.toDegrees(radius / R1 / Math.cos(Math.toRadians(lastLocation.getLatitude())));
