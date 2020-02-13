@@ -1,9 +1,10 @@
-*Will be adding screenshots / demo video shortly*
-
-[![Demo Video](https://img.youtube.com/vi/Rgc2mX6d-ek/0.jpg)](https://www.youtube.com/watch?v=Rgc2mX6d-ek)
-
 # Sustain-Web3-hackathon-FOAM
 Submission for FOAM challenge(s) for the Gitcoin Sustain Web3 hackathon
+
+![App Icon](https://github.com/dhodge229/Sustain-Web3-hackathon-FOAM/blob/master/previews/app_icon.png?raw=true)
+
+### Youtube Demo Video
+[![Demo Video](https://img.youtube.com/vi/Rgc2mX6d-ek/0.jpg)](https://www.youtube.com/watch?v=Rgc2mX6d-ek)
 
 ## Gitcoin Context URls
 https://gitcoin.co/issue/ryan-foamspace/Sustain-Web3-hackathon/3/3960
@@ -14,6 +15,8 @@ https://gitcoin.co/issue/ryan-foamspace/Sustain-Web3-hackathon/2/3961
 Named 0xMap, this repo holds the code for a native Android app that leverages 
 Augmented Reality (ArCore) and 3D mapping (Mapbox) to create a visual reference tool for 
 FOAM POI data (https://foam.space/). 
+
+Debug APK build : https://drive.google.com/open?id=1lcKpvQED1lsdzTQyL5CiSYUxW2fe_2Ft
 
 ## Functinality (Mobile-Friendly Map Viewer)
 - At first launch, app will request location and camera permissions (THESE ARE REQUIRED!)
@@ -41,3 +44,6 @@ FOAM POI data (https://foam.space/).
 - Add distance settings for background POI notifications 
 - Query and add displays for FOAM Signals onto map and within AR View
 - Add extra context layer for those visiting a POI (reviews, pictures, etc)
+
+
+![Home Screen](https://github.com/dhodge229/Sustain-Web3-hackathon-FOAM/blob/master/previews/app_nav.jpg?raw=true)
