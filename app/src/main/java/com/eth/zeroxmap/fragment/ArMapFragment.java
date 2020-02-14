@@ -113,7 +113,7 @@ public class ArMapFragment extends BaseFragment {
 
     // Our ARCore-Location scene
     private LocationScene locationScene;
-    private static int RENDER_DIST = 15000;
+    private static int RENDER_DIST = 400;
     private Location lastLoc = null;
     private IconFactory iconFactory;
     private Icon baseIcon;
@@ -183,6 +183,7 @@ public class ArMapFragment extends BaseFragment {
                                 // We know that here, the AR components have been initiated.
                                 locationScene = new LocationScene(getActivity(), arSceneView);
                                 locationScene.setOffsetOverlapping(true);
+                                locationScene.setRemoveOverlapping(true);
                             }
 
                             Frame frame = arSceneView.getArFrame();
@@ -483,7 +484,8 @@ public class ArMapFragment extends BaseFragment {
                                 getExampleView(foamPois.get(i), viewRenderable)
                         );
                         //Turn back on the change how far away we render
-                        //layoutLocationMarker.setOnlyRenderWhenWithin(RENDER_DIST);
+                        layoutLocationMarker.setOnlyRenderWhenWithin(RENDER_DIST);
+                        layoutLocationMarker.setScalingMode(LocationMarker.ScalingMode.GRADUAL_TO_MAX_RENDER_DISTANCE);
                         layoutLocationMarker.setRenderEvent(new LocationNodeRender() {
                             @Override
                             public void render(LocationNode node) {
