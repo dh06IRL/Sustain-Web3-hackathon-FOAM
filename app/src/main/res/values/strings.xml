@@ -3,9 +3,18 @@
     <string name="access_token">pk.eyJ1Ijoia3RtZGF2aWQyMjkiLCJhIjoiY2s2amlqcWZtMDRvczNubHU3Z2VtajZhZCJ9.sd8okNUBajuDGrQtlXB50w</string>
     <string name="font">fonts/times-new-roman.ttf</string>
 
-    <string name="nav_vision_map">Vision Map</string>
+    <string name="nav_local_map">0x Map</string>
+
+    <string name="nav_oxe_v_map">0xEarth Vision Map</string>
+    <string name="nav_oxe_site">0xEarth Info</string>
+    <string name="nav_oxe_market">0xEarth Marketplace</string>
+    <string name="nav_oxe_dao">0xEarth DAO</string>
+
+    <string name="nav_foam_v_map">FOAM Vision Map</string>
     <string name="nav_foam_tool">FOAM Tools</string>
-    <string name="nav_foam_map">FOAM Map</string>
+    <string name="nav_foam_map">FOAM dApp Map</string>
+
+
     <string name="nav_foam_tokens">Get FOAM Tokens</string>
     <string name="nav_trust_wallet">Open Trust Wallet</string>
     <string name="nav_meta_wallet">Open MetaMask Wallet</string>

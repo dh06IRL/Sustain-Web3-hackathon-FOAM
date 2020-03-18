@@ -170,10 +170,35 @@ public class MainActivity extends BaseActivity implements PermissionListener {
 
     private void setupDrawer(){
         List<IDrawerItem> drawerItems = new ArrayList<>();
-        drawerItems.add(new PrimaryDrawerItem().withName(getResources().getString(R.string.nav_vision_map))
-                .withIcon(R.mipmap.ic_vision)
-                .withIdentifier(1)
+        drawerItems.add(new PrimaryDrawerItem().withName(getResources().getString(R.string.nav_local_map))
+                .withIcon(R.mipmap.ic_map)
+                .withIdentifier(999)
                 .withSelectable(true));
+
+        //TODO ICONS
+        //divider 0xEarth
+        drawerItems.add(new PrimaryDrawerItem().withName(getResources().getString(R.string.nav_oxe_v_map))
+                .withIcon(R.mipmap.ic_vision)
+                .withIdentifier(40)
+                .withSelectable(true));
+        drawerItems.add(new PrimaryDrawerItem().withName(getResources().getString(R.string.nav_oxe_market))
+                .withIcon(R.mipmap.ic_vision)
+                .withIdentifier(41)
+                .withSelectable(true));
+        drawerItems.add(new PrimaryDrawerItem().withName(getResources().getString(R.string.nav_oxe_site))
+                .withIcon(R.mipmap.ic_vision)
+                .withIdentifier(42)
+                .withSelectable(true));
+        drawerItems.add(new PrimaryDrawerItem().withName(getResources().getString(R.string.nav_oxe_dao))
+                .withIcon(R.mipmap.ic_vision)
+                .withIdentifier(43)
+                .withSelectable(true));
+
+        //divider FOAM
+        drawerItems.add(new PrimaryDrawerItem().withName(getResources().getString(R.string.nav_foam_v_map))
+                .withIcon(R.mipmap.ic_tools)
+                .withIdentifier(1)
+                .withSelectable(false));
         drawerItems.add(new PrimaryDrawerItem().withName(getResources().getString(R.string.nav_foam_tool))
                 .withIcon(R.mipmap.ic_tools)
                 .withIdentifier(2)
@@ -232,10 +257,17 @@ public class MainActivity extends BaseActivity implements PermissionListener {
                         Analytics.sendAnalyticEvent(mContext, "Nav_Click", "" + position,
                                 "", System.currentTimeMillis());
                         //Base AR / Map Open
+                        if (drawerItem.getIdentifier() == 999) {
+//                            Analytics.sendAnalyticEvent());
+                            //Load AR
+                            getSupportActionBar().setTitle(getResources().getString(R.string.nav_local_map));
+                            swapFragment(new ArMapFragment());
+                        }
+
                         if (drawerItem.getIdentifier() == 1) {
 //                            Analytics.sendAnalyticEvent());
                             //Load AR
-                            getSupportActionBar().setTitle(getResources().getString(R.string.nav_vision_map));
+                            getSupportActionBar().setTitle(getResources().getString(R.string.nav_foam_v_map));
                             swapFragment(new ArMapFragment());
                         }
 
