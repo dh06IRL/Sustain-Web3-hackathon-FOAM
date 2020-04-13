@@ -1,4 +1,7 @@
-# Sustain-Web3-hackathon-FOAM
+# Deprecated
+This repo is for reference only. Please go to https://github.com/ArWrld-Tech/ArWrld-Android for latest developments! 
+
+## Sustain-Web3-hackathon-FOAM
 Submission for FOAM challenge(s) for the Gitcoin Sustain Web3 hackathon
 
 ![App Icon](https://github.com/dhodge229/Sustain-Web3-hackathon-FOAM/blob/master/previews/app_icon.png?raw=true)
